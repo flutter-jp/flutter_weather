@@ -10,7 +10,14 @@
 
 - 开发环境: Android Studio 
 - 适配版本：> android 4.0 (api 14)
-- 开源类库：
+
+开源类库：
+
+``` xml
+    compile 'com.orhanobut:logger:1.15'    //日志
+    compile 'com.jakewharton:butterknife:8.4.0'  //注解框架
+   
+```
 
 
 
