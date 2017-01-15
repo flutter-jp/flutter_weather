@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.aries.app.utils.HttpUtil;
+
 /**
  * @ author ：monsterLin
  * @ date : 2017/1/13
@@ -13,7 +15,14 @@ import android.support.v7.app.AppCompatActivity;
  * @ describe :  Activity 基类
  */
 
-public class BaseActivity  extends AppCompatActivity{
+public class BaseActivity extends AppCompatActivity {
+
+    private HttpUtil httpUtil;
+
+    public BaseActivity() {
+        this.httpUtil = HttpUtil.getInstance(this);
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
