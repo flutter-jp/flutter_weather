@@ -1,29 +1,44 @@
-# 校园app
-
-> 初版设计
-> 本文档最后更新于2017/01/13
-
-## 目前程序处于开发期间
+# Flutter Weather
+ <img alt="Awesome Flutter" src="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square" />
+A Flutter application to view current weather status.
 
 
-## 客户端
+![android](./screenshots/android.png?raw=true 'android')
+![ios](./screenshots/ios.gif?raw=true 'ios')
+![ios](./screenshots/ios_chart.gif?raw=true 'ios')
 
-- 开发环境: Android Studio 
-- 适配版本：> android 4.0 (api 14)
+## Features
+- :white_check_mark: Beautiful minimal UI
+- :white_check_mark: Dark and Light themes
+- :white_check_mark: Current temperature, max and min temperature, sunset, sunrise
+- :white_check_mark: Custom icons for each weather condition
+- :white_check_mark: 5 day forecast
+- :white_check_mark: Beautifully animated transitions
+- :white_check_mark: BLoC pattern for API calls
+- :white_check_mark: Line graph to show temperature variance
 
-开源类库：
+## Getting Started
 
-``` xml
-    compile 'com.orhanobut:logger:1.15'    //日志
-    compile 'com.jakewharton:butterknife:8.4.0'  //注解框架
-   
-```
+### Prerequisites
+**Flutter**
 
 
+### Installing
 
-## 服务端
+**API Key**
 
-- api链接：[http://api.xiaomo.info/](http://api.xiaomo.info/)
-- 服务器：nginx
-- 开发环境：java8
-- 开源类库：spring boot
+Create a file called `api_keys.dart` in `lib/src/api/`
+
+Make a class called `ApiKey` with your openweathermaps API key in it. Get it [here](https://openweathermap.org/api)
+
+eg:
+  ```
+  class ApiKey {
+    static const OPEN_WEATHER_MAP = 'your_key';
+  }
+  ```
+
+
+## Acknowledgments
+
+* [Weather Icon Pack](https://erikflowers.github.io/weather-icons/)
